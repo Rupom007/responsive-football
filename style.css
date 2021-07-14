@@ -254,10 +254,8 @@ td img{
 /*--------------------------------
         Responsive Design
 --------------------------------*/
+/*mobile devices*/
 @media only screen and (max-width: 688px) {
-    body{
-        /* background-color: violet; */
-    }
     /*Header Section*/
     header{
         width: 100%;
@@ -335,5 +333,65 @@ td img{
     .footer-image img{
         width: 270px;
         margin-bottom: 30px;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    /* header */
+    header{
+        width: 100%;
+    }
+    .header-title{
+        margin-left: 20px;
+    }
+    .navbar{
+        align-items: center;
+    }
+    .navigations{
+        padding: 0px 15px;
+    }
+    .login{
+        margin-right: 10px;
+    }
+    .header-title h1{
+        font-size: 50px;
+    }
+    .header-image img{
+        height: 360px;
+        width: 450px;
+    }
+    /* Blogs section */
+    .blogs{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    /* watch now section */
+    .watch-now{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 60px;
+        margin-left: 15%;
+        margin-top: 40px;
+    }
+    /* contact us  */
+    .contact-us{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form-card, .clubs-box{
+        height: 500px;
+        width: 550px;
+        margin-bottom: 50px;
+    }
+    .form-input, .form-input-textarea{
+        width: 400px;
+        padding: 8px;
+        margin-bottom: 10px;
     }
 }
