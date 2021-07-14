@@ -82,7 +82,6 @@ header{
 .blog-box{
     display: flex;
     justify-content: center;
-    /* background-color: cornflowerblue; */
 }
 .blogs{
     width: 1050px;
@@ -91,7 +90,9 @@ header{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 45px;
-    /* background-color: coral; */
+}
+.paragraph-color{
+    color: grey;
 }
 .blog{
     height: 456px;
@@ -148,7 +149,6 @@ header{
     display: flex;
 }
 .contact-form-box{
-    /* background-color: cadetblue; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -186,7 +186,6 @@ header{
                 Clubs Section
 -------------------------------------------*/
 .top-clubs{
-    /* background-color: chocolate; */
     width: 50%;
     display: flex;
     justify-content: center;
@@ -240,17 +239,6 @@ td img{
     margin-top: 2px;
     font-size: 18px;
 }
-.copyright img{
-    transition: margin ease-in 1s, ease-out 1s;
-}
-.copyright img:hover{
-    margin-top: 4px solid red;
-    margin-right: 4px solid red;
-    margin-bottom: 4px solid red;
-    margin-left: 4px solid red;
-    transition: ease-in-out 2s;
-
-}
 /*--------------------------------
         Responsive Design
 --------------------------------*/
@@ -280,6 +268,10 @@ td img{
         height: 259px;
         width: 329px;
     }
+    /* hover*/
+    .hover-image:hover{
+        transform: scale(0.8) rotate(15deg);
+    }
     /* Article Section */
     .blog-box{
         display: flex;
@@ -292,7 +284,7 @@ td img{
     }
     .watch-now{
         margin-top: 60px;
-        margin-left: 10%;
+        margin: 0% 50%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 50px;
