@@ -65,12 +65,16 @@ header{
     text-decoration: none;
     color: #FFFFFF;
 }
-.header-image{
-    display: inline;
-}
 .header-image img{
     height: 438px;
     width: 556px;
+}
+/* hover effect */
+.hover-image{
+    transition: transform 1s, ease-in 1s ease-out 1.5s;
+}
+.hover-image:hover{
+    transform: scale(1.2) rotate(15deg);
 }
 /*----------------------------------
         Article/Blogs Section
@@ -236,6 +240,17 @@ td img{
     margin-top: 2px;
     font-size: 18px;
 }
+.copyright img{
+    transition: margin ease-in 1s, ease-out 1s;
+}
+.copyright img:hover{
+    margin-top: 4px solid red;
+    margin-right: 4px solid red;
+    margin-bottom: 4px solid red;
+    margin-left: 4px solid red;
+    transition: ease-in-out 2s;
+
+}
 /*--------------------------------
         Responsive Design
 --------------------------------*/
@@ -279,17 +294,17 @@ td img{
     }
     .watch-now{
         margin-top: 60px;
-        margin-left: 5%;
+        margin-left: 10%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 120px;
+        grid-row-gap: 50px;
     }
     .watch-now-text-box{
         height: 299px;
         width: 329px;
     }
     .watch-now-text h1{
-        font-size: 36px;
+        font-size: 33px;
     }
     .watch-now-image img{
         height: 248px;
@@ -320,8 +335,5 @@ td img{
     .footer-image img{
         width: 270px;
         margin-bottom: 30px;
-    }
-    .copyright p{
-        margin-bottom: 170px;
     }
 }
